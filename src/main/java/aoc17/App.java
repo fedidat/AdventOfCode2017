@@ -15,7 +15,9 @@ import java.util.Map.Entry;
 import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import org.apache.commons.io.FileUtils;
@@ -23,19 +25,19 @@ import org.apache.commons.io.FileUtils;
 public class App {
 
     public static void main(String[] args) throws IOException {
-        adventOfCode10_1();
+        adventOfCode11_1();
     }
 
     @SuppressWarnings("unused")
-    private static void adventOfCode10_2() throws IOException {
-        String input = FileUtils.readFileToString(new File("inputs/aoc10.txt"));
+    private static void adventOfCode11_2() throws IOException {
+        String inputStr = FileUtils.readFileToString(new File("inputs/aoc11.txt"));
 
     }
 
     @SuppressWarnings("unused")
-    private static void adventOfCode10_1() throws IOException {
-        String input = FileUtils.readFileToString(new File("inputs/aoc10.txt"));
-
+    private static void adventOfCode11_1() throws IOException {
+        String inputStr = FileUtils.readFileToString(new File("inputs/aoc11.txt"));
+        
     }
 
 }

@@ -1,1 +1,1 @@
-My (very late) submissions to Advent of Code 2017
+My (very late) submissions to Advent of Code 2017, all in Java 10.

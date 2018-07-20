@@ -2,8 +2,8 @@ package aoc17;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
@@ -34,11 +34,11 @@ public class Day8 {
             //more elegant this time
             int comparison = Integer.compare(value, ifValue);
             if(comparison == 1) 
-                execute = List.of(">", ">=", "!=").contains(ifOperator);
+                execute = Arrays.asList(">", ">=", "!=").contains(ifOperator);
             else if(comparison == -1)
-                execute = List.of("<", "<=", "!=").contains(ifOperator);
+                execute = Arrays.asList("<", "<=", "!=").contains(ifOperator);
             else
-                execute = List.of("==", ">=", "<=").contains(ifOperator);
+                execute = Arrays.asList("==", ">=", "<=").contains(ifOperator);
 
             if(execute)
                 registers.put(register, (increase ? 1 : -1) * value + registers.getOrDefault(register, 0));

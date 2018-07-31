@@ -17,6 +17,12 @@ public class Day10 {
     @SuppressWarnings("unused")
     private static void adventOfCode10_2() throws IOException {
         String inputStr = FileUtils.readFileToString(new File("inputs/aoc10.txt"));
+        System.out.println(knotHash(inputStr));
+    }
+
+    //Originally part of adventOfCode10_2, turned into a function for day 14
+    @SuppressWarnings("unused")
+    public static String knotHash(String inputStr) {
         final int SPAN_SIZE = 256, NUM_OF_ROUNDS = 64, BLOCK_SIZE = 16, BLOCKS = (int) Math.ceil(SPAN_SIZE / BLOCK_SIZE);
         int[] input = IntStream.concat(inputStr.chars(), IntStream.of(17, 31, 73, 47, 23)).toArray();
         int[] span = IntStream.range(0, SPAN_SIZE).toArray();
@@ -44,8 +50,7 @@ public class Day10 {
         }
 
         //convert dense span to hexa then concat to hash
-        String hash = IntStream.of(denseSpan).mapToObj(i-> String.format("%02x", i)).collect(Collectors.joining(""));
-        System.out.println(hash);
+        return IntStream.of(denseSpan).mapToObj(i-> String.format("%02x", i)).collect(Collectors.joining(""));
     }
 
     @SuppressWarnings("unused")

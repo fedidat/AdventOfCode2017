@@ -5,23 +5,21 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 
-
 public class App {
 
     public static void main(String[] args) throws IOException {
-        adventOfCode15_1();
-    }
-
-
-    @SuppressWarnings("unused")
-    private static void adventOfCode15_2() throws IOException {
-        final String inputStr = FileUtils.readFileToString(new File("inputs/aoc15.txt"));
-
+        adventOfCode16_1();
     }
 
     @SuppressWarnings("unused")
-    private static void adventOfCode15_1() throws IOException {
-        final String inputStr = FileUtils.readFileToString(new File("inputs/aoc15.txt"));
-        
+    private static void adventOfCode16_2() throws IOException {
+        String inputStr = FileUtils.readFileToString(new File("inputs/aoc16.txt"));
+
+    }
+
+    @SuppressWarnings("unused")
+    private static void adventOfCode16_1() throws IOException {
+        String inputStr = FileUtils.readFileToString(new File("inputs/aoc16.txt"));
+
     }
 }

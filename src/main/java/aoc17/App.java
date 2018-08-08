@@ -8,18 +8,18 @@ import org.apache.commons.io.FileUtils;
 public class App {
 
     public static void main(String[] args) throws IOException {
-        adventOfCode16_1();
+        adventOfCode17_1();
     }
 
     @SuppressWarnings("unused")
-    private static void adventOfCode16_2() throws IOException {
-        String inputStr = FileUtils.readFileToString(new File("inputs/aoc16.txt"));
+    private static void adventOfCode17_2() throws IOException {
+        String inputStr = FileUtils.readFileToString(new File("inputs/aoc17.txt"));
 
     }
 
     @SuppressWarnings("unused")
-    private static void adventOfCode16_1() throws IOException {
-        String inputStr = FileUtils.readFileToString(new File("inputs/aoc16.txt"));
+    private static void adventOfCode17_1() throws IOException {
+        String inputStr = FileUtils.readFileToString(new File("inputs/aoc17.txt"));
 
     }
 }

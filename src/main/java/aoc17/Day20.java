@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.io.FileUtils;
 
-public class App {
+public class Day20 {
     public static void main(String[] args) throws IOException {
         adventOfCode20_2();
     }

@@ -7,18 +7,18 @@ import org.apache.commons.io.FileUtils;
 
 public class App {
     public static void main(String[] args) throws IOException {
-        adventOfCode23_1();
+        adventOfCode24_1();
     }
 
 	@SuppressWarnings("unused")
-    private static void adventOfCode23_2() throws IOException {
-		String inputStr = FileUtils.readFileToString(new File("inputs/aoc23.txt"));
+    private static void adventOfCode24_2() throws IOException {
+        String inputStr = FileUtils.readFileToString(new File("inputs/aoc24.txt"));
         
     }
 
     @SuppressWarnings("unused")
-    private static void adventOfCode23_1() throws IOException {
-		String inputStr = FileUtils.readFileToString(new File("inputs/aoc23.txt"));
+    private static void adventOfCode24_1() throws IOException {
+        String inputStr = FileUtils.readFileToString(new File("inputs/aoc24.txt"));
         
     }
 
